@@ -46,8 +46,8 @@ If it feels handcrafted, it probably is.
 
 | Project | Description | Tech |
 |----------|--------------|------|
-| [**Collabo**](https://github.com/${COLLABO_ORG_USERNAME}/collabo) | Group-based payment pooling platform for shared expenses and shopping. | Next.js · Supabase · Node.js |
-| [**CourierX**](https://github.com/${COURIER_X_ORG_USERNAME}/courierx-api) | Universal email routing + automation API built for multi-tenant SaaS. | TypeScript · NestJS · Redis |
+| [**Collabo**](https://github.com/${COLLABO_ORG_USERNAME}) | Group-based payment pooling platform for shared expenses and shopping. | Next.js · Supabase · Node.js |
+| [**CourierX**](https://github.com/${COURIER_X_ORG_USERNAME}/courierX) | Universal email routing + automation API built for multi-tenant SaaS. | TypeScript · NestJS · Redis |
 | [**Gitsink**](https://github.com/${MAIN_USERNAME}/gitsink) | Developer portfolio engine that syncs GitHub projects via API. | Fastify · PostgreSQL · GraphQL |
 | [**RelayHelp**](https://github.com/${MAIN_USERNAME}/relayhelp) | Discord-based helpdesk and AI-assisted ticket system. | Erlang · Redis · Supabase |
 | [**Myra**](https://github.com/${MAIN_USERNAME}/myra) | Voice-enabled personal AI assistant with evolving neural modules. | Python · Redis · Vector DB |
