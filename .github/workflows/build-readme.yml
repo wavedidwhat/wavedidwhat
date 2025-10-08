@@ -1,0 +1,47 @@
+name: Build README
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 9 * * 1" # Mondays 09:00 UTC
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    env:
+      MAIN_USERNAME:        ${{ vars.MAIN_USERNAME }}
+      ALT_USERNAME:         ${{ vars.ALT_USERNAME }}
+      PUBLIC_EMAIL:         ${{ vars.PUBLIC_EMAIL }}
+      X_HANDLE:             ${{ vars.X_HANDLE }}
+      DISCORD_ID:           ${{ vars.DISCORD_ID }}
+      COLLABO_ORG_USERNAME: ${{ vars.COLLABO_ORG_USERNAME }}
+      COURIER_X_ORG_USERNAME: ${{ vars.COURIER_X_ORG_USERNAME }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate required vars
+        run: |
+          missing=""
+          for v in MAIN_USERNAME ALT_USERNAME PUBLIC_EMAIL X_HANDLE DISCORD_ID COLLABO_ORG_USERNAME COURIER_X_ORG_USERNAME; do
+            if [ -z "${!v}" ]; then
+              missing="$missing $v"
+            fi
+          done
+          if [ -n "$missing" ]; then
+            echo "❌ Missing repo variables:$missing"
+            exit 1
+          fi
+
+      - name: Render README from template
+        run: |
+          # envsubst replaces ${VAR} with env values
+          envsubst < README.template.md > README.md
+
+      - name: Commit changes if any
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(readme): auto-render from template"
+          file_pattern: README.md

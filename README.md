@@ -5,7 +5,7 @@ I build quietly, in public.</h2>
 <p align="center">
   <a href="https://x.com/wavedidwhat" target="_blank"><img src="https://img.shields.io/badge/X_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
   <a href="mailto:wavedidwhat@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
+  <a href="https://discord.com/users/{}" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
   <a href="https://github.com/enochthedev" target="_blank"><img src="https://img.shields.io/badge/Main_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
