@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -23,23 +24,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Validate required vars
+      - name: Set defaults and render README
         run: |
-          missing=""
-          for v in MAIN_USERNAME ALT_USERNAME PUBLIC_EMAIL X_HANDLE DISCORD_ID COLLABO_ORG_USERNAME COURIER_X_ORG_USERNAME; do
-            if [ -z "${!v}" ]; then
-              missing="$missing $v"
-            fi
-          done
-          if [ -n "$missing" ]; then
-            echo "❌ Missing repo variables:$missing"
-            exit 1
-          fi
+          # apply safe defaults if any var is missing
+          : "${MAIN_USERNAME:=enochthedev}"
+          : "${ALT_USERNAME:=wavedidwhat}"
+          : "${PUBLIC_EMAIL:=wavedidwhat@gmail.com}"
+          : "${X_HANDLE:=wavedidwhat}"
+          : "${DISCORD_ID:=000000000000000000}"
+          : "${COLLABO_ORG_USERNAME:=${MAIN_USERNAME}}"
+          : "${COURIER_X_ORG_USERNAME:=${MAIN_USERNAME}}"
 
-      - name: Render README from template
-        run: |
-          # envsubst replaces ${VAR} with env values
+          export MAIN_USERNAME ALT_USERNAME PUBLIC_EMAIL X_HANDLE DISCORD_ID COLLABO_ORG_USERNAME COURIER_X_ORG_USERNAME
+
+          # render README.md from template
           envsubst < README.template.md > README.md
 
       - name: Commit changes if any
