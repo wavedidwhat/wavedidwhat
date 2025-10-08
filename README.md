@@ -3,10 +3,14 @@ clean slate. same mind, new rhythm.<br>
 I build quietly, in public.</h2>
 
 <p align="center">
-  <a href="https://x.com/wavedidwhat" target="_blank"><img src="https://img.shields.io/badge/X_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
-  <a href="mailto:wavedidwhat@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://discord.com/users/{}" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
-  <a href="https://github.com/enochthedev" target="_blank"><img src="https://img.shields.io/badge/Main_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <sub>This is my public-facing GitHub. My main account is <a href="https://github.com/${MAIN_USERNAME:-enochthedev}">@${MAIN_USERNAME:-enochthedev}</a>.</sub>
+</p>
+
+<p align="center">
+  <a href="https://x.com/${X_HANDLE:-wavedidwhat}" target="_blank"><img src="https://img.shields.io/badge/X_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="mailto:${PUBLIC_EMAIL:-wavedidwhat@gmail.com}" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://discord.com/users/${DISCORD_ID:-000000000000000000}" target="_blank"><img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" /></a>
+  <a href="https://github.com/${MAIN_USERNAME:-enochthedev}" target="_blank"><img src="https://img.shields.io/badge/Main_GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
 </p>
 
 ---
@@ -40,12 +44,12 @@ If it feels handcrafted, it probably is.
 
 | Project | Description | Tech |
 |----------|--------------|------|
-| [**Collabo**](https://github.com/enochthedev/collabo) | Group-based payment pooling platform for shared expenses and shopping. | Next.js · Supabase · Node.js |
-| [**CourierX**](https://github.com/enochthedev/courierx-api) | Universal email routing + automation API built for multi-tenant SaaS. | TypeScript · NestJS · Redis |
-| [**Gitsink**](https://github.com/enochthedev/gitsink) | Developer portfolio engine that syncs GitHub projects via API. | Fastify · PostgreSQL · GraphQL |
-| [**RelayHelp**](https://github.com/enochthedev/relayhelp) | Discord-based helpdesk and AI-assisted ticket system. | Erlang · Redis · Supabase |
-| [**Myra**](https://github.com/enochthedev/myra) | Voice-enabled personal AI assistant with evolving neural modules. | Python · Redis · Vector DB |
-| [**BaseHog**](https://github.com/enochthedev/basehog) | Trading automation bot for Base chain with real-time analytics. | Rust · TypeScript · Web3 |
+| [**Collabo**](https://github.com/${COLLABO_ORG_USERNAME:-enochthedev}/collabo) | Group-based payment pooling platform for shared expenses and shopping. | Next.js · Supabase · Node.js |
+| [**CourierX**](https://github.com/${COURIER_X_ORG_USERNAME:-enochthedev}/courierx-api) | Universal email routing + automation API built for multi-tenant SaaS. | TypeScript · NestJS · Redis |
+| [**Gitsink**](https://github.com/${MAIN_USERNAME:-enochthedev}/gitsink) | Developer portfolio engine that syncs GitHub projects via API. | Fastify · PostgreSQL · GraphQL |
+| [**RelayHelp**](https://github.com/${MAIN_USERNAME:-enochthedev}/relayhelp) | Discord-based helpdesk and AI-assisted ticket system. | Erlang · Redis · Supabase |
+| [**Myra**](https://github.com/${MAIN_USERNAME:-enochthedev}/myra) | Voice-enabled personal AI assistant with evolving neural modules. | Python · Redis · Vector DB |
+| [**BaseHog**](https://github.com/${MAIN_USERNAME:-enochthedev}/basehog) | Trading automation bot for Base chain with real-time analytics. | Rust · TypeScript · Web3 |
 
 </div>
 
@@ -54,30 +58,30 @@ If it feels handcrafted, it probably is.
 ### 📊 Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=enochthedev&show_icons=true&theme=transparent&custom_title=Main%20Account" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api?username=wavedidwhat&show_icons=true&theme=transparent&custom_title=This%20Account" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=${MAIN_USERNAME:-enochthedev}&show_icons=true&theme=transparent&custom_title=Main%20Account" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=${ALT_USERNAME:-wavedidwhat}&show_icons=true&theme=transparent&custom_title=This%20Account" height="150" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=wavedidwhat&theme=transparent" height="150" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=${ALT_USERNAME:-wavedidwhat}&theme=transparent" height="150" />
 </div>
 
 ---
 
 ### 🗣️ Connect
 <p align="left">
-  <a href="mailto:wavedidwhat@gmail.com" target="_blank"><img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=D14836&logoColor=white&style=for-the-badge" height="30" /></a>
-  <a href="https://x.com/wavedidwhat" target="_blank"><img src="https://img.shields.io/static/v1?message=X_(Twitter)&logo=x&label=&color=000000&logoColor=white&style=for-the-badge" height="30" /></a>
-  <a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&style=for-the-badge" height="30" /></a>
-  <a href="https://github.com/enochthedev" target="_blank"><img src="https://img.shields.io/static/v1?message=Main_GitHub&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="30" /></a>
+  <a href="mailto:${PUBLIC_EMAIL:-wavedidwhat@gmail.com}" target="_blank"><img src="https://img.shields.io/static/v1?message=Email&logo=gmail&label=&color=D14836&logoColor=white&style=for-the-badge" height="30" /></a>
+  <a href="https://x.com/${X_HANDLE:-wavedidwhat}" target="_blank"><img src="https://img.shields.io/static/v1?message=X_(Twitter)&logo=x&label=&color=000000&logoColor=white&style=for-the-badge" height="30" /></a>
+  <a href="https://discord.com/users/${DISCORD_ID:-000000000000000000}" target="_blank"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&style=for-the-badge" height="30" /></a>
+  <a href="https://github.com/${MAIN_USERNAME:-enochthedev}" target="_blank"><img src="https://img.shields.io/static/v1?message=Main_GitHub&logo=github&label=&color=181717&logoColor=white&style=for-the-badge" height="30" /></a>
 </p>
 
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/wavedidwhat/wavedidwhat/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/wavedidwhat/wavedidwhat/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/wavedidwhat/wavedidwhat/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${ALT_USERNAME:-wavedidwhat}/${ALT_USERNAME:-wavedidwhat}/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/${ALT_USERNAME:-wavedidwhat}/${ALT_USERNAME:-wavedidwhat}/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/${ALT_USERNAME:-wavedidwhat}/${ALT_USERNAME:-wavedidwhat}/output/pacman-contribution-graph.svg">
 </picture>
 
 ---
